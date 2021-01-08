@@ -48,7 +48,7 @@ layout: default
                 </ul>
                 <hr style="visibility: hidden;">
 
-                {% if site.disqus_username %}
+                {% if site.disqus_username and page.enable_comm %}
                 <!-- disqus 评论框 start -->
                 <div class="comment">
                     <div id="disqus_thread" class="disqus-thread"></div>
@@ -61,7 +61,7 @@ layout: default
                 <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
                 <!-- 网易云跟帖 评论框 end -->
                 {% endif %}
-            </div>  
+            </div>
 
     <!-- Side Catalog Container -->
         {% unless page.no-catalog %}
